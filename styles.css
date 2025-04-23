@@ -1,0 +1,123 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+    /* 添加以下两行使 body 内容居中 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* 确保 category 容器自适应宽度 */
+    width: 100%;
+    max-width: 800px; /* 可根据需要调整最大宽度 */
+    /* 新增以下样式让子元素居中 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category h2 {
+    color: #555;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    /* 让标题也居中 */
+    align-self: stretch;
+    text-align: center;
+}
+
+.category-confirm-btn, .category-reset-btn {
+    margin: 10px 5px; /* 调整按钮之间的间距 */
+    /* 确保按钮不会被拉伸 */
+    align-self: center;
+}
+
+.image-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* 让图片容器内的图片居中 */
+    justify-content: center;
+}
+
+.image-container img {
+    max-width: 150px; /* 调整这个值以改变图片的最大宽度 */
+    height: auto;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-color: #007BFF;
+}
+
+.image-container img.selected {
+    border-color: #007BFF;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.category-confirm-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.category-confirm-btn:hover {
+    background-color: #0056b3;
+}
+
+.category-reset-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.category-reset-btn:hover {
+    background-color: #c82333;
+}
+
+/* 添加新的类来包裹按钮并设置样式 */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    width: 100%;
+}
+
+.category-confirm-btn, .category-reset-btn {
+    margin: 0; 
+    flex: 0 1 auto; 
+}
+
+.image-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* 让图片容器内的图片居中 */
+    justify-content: center;
+    margin-bottom: 10px; /* 给图片容器和按钮之间添加一些间距 */
+}
