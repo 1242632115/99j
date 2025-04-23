@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>假发摄影套系预案</title>
+    <title>发都假发摄影套系预案</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>假发摄影套系预案</h1>
+    <!-- 页面标题 -->
+    <h1 class="text-4xl font-bold text-center py-8 category-title">发都假发摄影套系预案</h1>
     
-    <div class="category">
-        <h2>拍摄角度</h2>
-        <div class="image-container" id="angle-container">
-            <!-- 修改图片链接 -->
+    <!-- 拍摄角度分类 -->
+    <div class="category max-w-6xl mx-auto mb-16 rounded-lg bg-gray-200 px-4 py-8">
+        <h2 class="text-2xl font-semibold category-title mb-6">拍摄角度</h2>
+        <div class="image-container grid gap-4">
+            <!-- 拍摄角度图片 -->
+            <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E8%A7%92%E5%BA%A6%E5%8F%82%E8%80%83/%E6%AD%A3%E9%9D%A2.jpg?sign=f25e639147c5aac28c0584a9895150ff&t=1745375545" alt="拍摄角度1" onclick="toggleSelection(this, 'angle-container')" class="cursor-pointer rounded-lg">
+            <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E8%A7%92%E5%BA%A6%E5%8F%82%E8%80%83/%E5%B7%A6%E4%BE%A7.jpg?sign=14fcd58a565786dfe8d6305681d49c0c&t=1745375856" alt="拍摄角度2" onclick="toggleSelection(this, 'angle-container')">
+            <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E8%A7%92%E5%BA%A6%E5%8F%82%E8%80%83/%E5%8F%B3%E4%BE%A7.jpg?sign=356f453d7eb8c3c0c51cb3f237597438&t=1745375872" alt="拍摄角度3" onclick="toggleSelection(this, 'angle-container')">
             <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E8%A7%92%E5%BA%A6%E5%8F%82%E8%80%83/%E6%AD%A3%E9%9D%A2.jpg?sign=f25e639147c5aac28c0584a9895150ff&t=1745375545" alt="拍摄角度1" onclick="toggleSelection(this, 'angle-container')">
             <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E8%A7%92%E5%BA%A6%E5%8F%82%E8%80%83/%E5%B7%A6%E4%BE%A7.jpg?sign=14fcd58a565786dfe8d6305681d49c0c&t=1745375856" alt="拍摄角度2" onclick="toggleSelection(this, 'angle-container')">
             <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E8%A7%92%E5%BA%A6%E5%8F%82%E8%80%83/%E5%8F%B3%E4%BE%A7.jpg?sign=356f453d7eb8c3c0c51cb3f237597438&t=1745375872" alt="拍摄角度3" onclick="toggleSelection(this, 'angle-container')">
@@ -20,31 +25,34 @@
             <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E8%A7%92%E5%BA%A6%E5%8F%82%E8%80%83/%E5%B7%A6%E4%BE%A7.jpg?sign=14fcd58a565786dfe8d6305681d49c0c&t=1745375856" alt="拍摄角度2" onclick="toggleSelection(this, 'angle-container')">
             <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E8%A7%92%E5%BA%A6%E5%8F%82%E8%80%83/%E5%8F%B3%E4%BE%A7.jpg?sign=356f453d7eb8c3c0c51cb3f237597438&t=1745375872" alt="拍摄角度3" onclick="toggleSelection(this, 'angle-container')">
             <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E8%A7%92%E5%BA%A6%E5%8F%82%E8%80%83/%E8%83%8C%E9%9D%A2.jpg?sign=9a2dbaffbffe5c8022fc9fd495434374&t=1745375887" alt="拍摄角度4" onclick="toggleSelection(this, 'angle-container')">
+            <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E8%A7%92%E5%BA%A6%E5%8F%82%E8%80%83/%E8%83%8C%E9%9D%A2.jpg?sign=9a2dbaffbffe5c8022fc9fd495434374&t=1745375887" alt="拍摄角度4" onclick="toggleSelection(this, 'angle-container')">
+            <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E8%A7%92%E5%BA%A6%E5%8F%82%E8%80%83/%E8%83%8C%E9%9D%A2.jpg?sign=9a2dbaffbffe5c8022fc9fd495434374&t=1745375887" alt="拍摄角度4" onclick="toggleSelection(this, 'angle-container')">
+            <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E8%A7%92%E5%BA%A6%E5%8F%82%E8%80%83/%E8%83%8C%E9%9D%A2.jpg?sign=9a2dbaffbffe5c8022fc9fd495434374&t=1745375887" alt="拍摄角度4" onclick="toggleSelection(this, 'angle-container')">
+            <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E8%A7%92%E5%BA%A6%E5%8F%82%E8%80%83/%E8%83%8C%E9%9D%A2.jpg?sign=9a2dbaffbffe5c8022fc9fd495434374&t=1745375887" alt="拍摄角度4" onclick="toggleSelection(this, 'angle-container')">
         </div>
-        <div class="button-container">
-            <button class="category-confirm-btn" onclick="confirmCategorySelection('angle-container')">确认</button>
-            <button class="category-reset-btn" onclick="resetCategorySelection('angle-container')">重选</button>
+        <div class="button-container flex space-x-4 justify-center">
+            <!-- 确认按钮添加 btn-11 类样式 -->
+            <button class="category-confirm-btn btn-primary px-6 py-2 font-medium text-white btn-11" onclick="confirmCategorySelection('angle-container')">确认</button>
+            <button class="category-reset-btn btn-secondary px-6 py-2 font-medium" onclick="resetCategorySelection('angle-container')">重选</button>
         </div>
     </div>
 
+    <!-- 拍摄风格分类 -->
     <div class="category">
         <h2>拍摄风格</h2>
         <div class="image-container" id="style-container">
             <!-- 请替换为微信云托管的图片链接 -->
-            <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E8%A7%92%E5%BA%A6%E5%8F%82%E8%80%83/%E6%AD%A3%E9%9D%A2.jpg?sign=f25e639147c5aac28c0584a9895150ff&t=1745375545" alt="拍摄角度1" onclick="toggleSelection(this, 'angle-container')">
-            <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E8%A7%92%E5%BA%A6%E5%8F%82%E8%80%83/%E5%B7%A6%E4%BE%A7.jpg?sign=14fcd58a565786dfe8d6305681d49c0c&t=1745375856" alt="拍摄角度2" onclick="toggleSelection(this, 'angle-container')">
-            <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E8%A7%92%E5%BA%A6%E5%8F%82%E8%80%83/%E5%8F%B3%E4%BE%A7.jpg?sign=356f453d7eb8c3c0c51cb3f237597438&t=1745375872" alt="拍摄角度3" onclick="toggleSelection(this, 'angle-container')">
-            <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E8%A7%92%E5%BA%A6%E5%8F%82%E8%80%83/%E6%AD%A3%E9%9D%A2.jpg?sign=f25e639147c5aac28c0584a9895150ff&t=1745375545" alt="拍摄角度1" onclick="toggleSelection(this, 'angle-container')">
-            <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E8%A7%92%E5%BA%A6%E5%8F%82%E8%80%83/%E5%B7%A6%E4%BE%A7.jpg?sign=14fcd58a565786dfe8d6305681d49c0c&t=1745375856" alt="拍摄角度2" onclick="toggleSelection(this, 'angle-container')">
-            <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E8%A7%92%E5%BA%A6%E5%8F%82%E8%80%83/%E5%8F%B3%E4%BE%A7.jpg?sign=356f453d7eb8c3c0c51cb3f237597438&t=1745375872" alt="拍摄角度3" onclick="toggleSelection(this, 'angle-container')">
-            <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E8%A7%92%E5%BA%A6%E5%8F%82%E8%80%83/%E8%83%8C%E9%9D%A2.jpg?sign=9a2dbaffbffe5c8022fc9fd495434374&t=1745375887" alt="拍摄角度4" onclick="toggleSelection(this, 'angle-container')">
+            <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E6%8B%8D%E6%91%84%E9%A3%8E%E6%A0%BC/%E5%B9%B3%E5%85%89.jpg?sign=7d2f0a23567d551293aff6b1cae0de12&t=1745378774" alt="拍摄角度1" onclick="toggleSelection(this, 'angle-container')">
+            <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E6%8B%8D%E6%91%84%E9%A3%8E%E6%A0%BC/%E5%85%89%E5%BD%B1%20-%E8%9D%B4%E8%9D%B6%E6%B0%B4%E5%8D%B0.jpg?sign=cd81b8755d082fe7a5556880a0ffd8bc&t=1745378815" alt="拍摄角度2" onclick="toggleSelection(this, 'angle-container')">
         </div>
         <div class="button-container">
-            <button class="category-confirm-btn" onclick="confirmCategorySelection('style-container')">确认</button>
+            <!-- 确认按钮添加 btn-11 类样式 -->
+            <button class="category-confirm-btn btn-primary px-6 py-2 font-medium text-white btn-11" onclick="confirmCategorySelection('style-container')">确认</button>
             <button class="category-reset-btn" onclick="resetCategorySelection('style-container')">重选</button>
         </div>
     </div>
 
+    <!-- 打理造型分类 -->
     <div class="category">
         <h2>打理造型</h2>
         <div class="image-container" id="hairdo-container">
@@ -58,7 +66,8 @@
             <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E8%A7%92%E5%BA%A6%E5%8F%82%E8%80%83/%E8%83%8C%E9%9D%A2.jpg?sign=9a2dbaffbffe5c8022fc9fd495434374&t=1745375887" alt="拍摄角度4" onclick="toggleSelection(this, 'angle-container')">
         </div>
         <div class="button-container">
-            <button class="category-confirm-btn" onclick="confirmCategorySelection('hairdo-container')">确认</button>
+            <!-- 确认按钮添加 btn-11 类样式 -->
+            <button class="category-confirm-btn btn-primary px-6 py-2 font-medium text-white btn-11" onclick="confirmCategorySelection('hairdo-container')">确认</button>
             <button class="category-reset-btn" onclick="resetCategorySelection('hairdo-container')">重选</button>
         </div>
     </div>
