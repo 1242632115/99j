@@ -13,7 +13,7 @@
     <!-- 拍摄角度分类 -->
     <div class="category max-w-6xl mx-auto mb-16 rounded-lg bg-gray-200 px-4 py-8">
         <h2 class="text-2xl font-semibold category-title mb-6">拍摄角度</h2>
-        <div class="image-container grid gap-4">
+        <div class="image-container grid gap-4" id="angle-image-container">
             <!-- 拍摄角度图片 -->
             <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E8%A7%92%E5%BA%A6%E5%8F%82%E8%80%83/%E6%AD%A3%E9%9D%A2.jpg?sign=f25e639147c5aac28c0584a9895150ff&t=1745375545" alt="拍摄角度1" onclick="toggleSelection(this, 'angle-container')" class="cursor-pointer rounded-lg">
             <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E8%A7%92%E5%BA%A6%E5%8F%82%E8%80%83/%E5%B7%A6%E4%BE%A7.jpg?sign=14fcd58a565786dfe8d6305681d49c0c&t=1745375856" alt="拍摄角度2" onclick="toggleSelection(this, 'angle-container')">
@@ -32,7 +32,7 @@
         </div>
         <div class="button-container flex space-x-4 justify-center">
             <!-- 确认按钮添加 btn-11 类样式 -->
-            <button class="category-confirm-btn btn-primary px-6 py-2 font-medium text-white btn-11" onclick="confirmCategorySelection('angle-container')">确认</button>
+            <button class="category-confirm-btn btn-primary px-6 py-2 font-medium text-white btn-11" onclick="confirmAndHide('angle-image-container', this)">确认</button>
             <button class="category-reset-btn btn-secondary px-6 py-2 font-medium" onclick="resetCategorySelection('angle-container')">重选</button>
         </div>
     </div>
@@ -40,14 +40,14 @@
     <!-- 拍摄风格分类 -->
     <div class="category">
         <h2>拍摄风格</h2>
-        <div class="image-container" id="style-container">
+        <div class="image-container" id="style-image-container">
             <!-- 请替换为微信云托管的图片链接 -->
             <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E6%8B%8D%E6%91%84%E9%A3%8E%E6%A0%BC/%E5%B9%B3%E5%85%89.jpg?sign=7d2f0a23567d551293aff6b1cae0de12&t=1745378774" alt="拍摄角度1" onclick="toggleSelection(this, 'angle-container')">
             <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E6%8B%8D%E6%91%84%E9%A3%8E%E6%A0%BC/%E5%85%89%E5%BD%B1%20-%E8%9D%B4%E8%9D%B6%E6%B0%B4%E5%8D%B0.jpg?sign=cd81b8755d082fe7a5556880a0ffd8bc&t=1745378815" alt="拍摄角度2" onclick="toggleSelection(this, 'angle-container')">
         </div>
         <div class="button-container">
             <!-- 确认按钮添加 btn-11 类样式 -->
-            <button class="category-confirm-btn btn-primary px-6 py-2 font-medium text-white btn-11" onclick="confirmCategorySelection('style-container')">确认</button>
+            <button class="category-confirm-btn btn-primary px-6 py-2 font-medium text-white btn-11" onclick="confirmAndHide('style-image-container', this)">确认</button>
             <button class="category-reset-btn" onclick="resetCategorySelection('style-container')">重选</button>
         </div>
     </div>
@@ -55,7 +55,7 @@
     <!-- 打理造型分类 -->
     <div class="category">
         <h2>打理造型</h2>
-        <div class="image-container" id="hairdo-container">
+        <div class="image-container" id="hairdo-image-container">
             <!-- 请替换为微信云托管的图片链接 -->
             <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E8%A7%92%E5%BA%A6%E5%8F%82%E8%80%83/%E6%AD%A3%E9%9D%A2.jpg?sign=f25e639147c5aac28c0584a9895150ff&t=1745375545" alt="拍摄角度1" onclick="toggleSelection(this, 'angle-container')">
             <img src="https://7072-prod-4g7twbh15fa546ea-1328109619.tcb.qcloud.la/%E5%8F%91%E9%83%BD%E6%91%84%E5%BD%B1%E5%A5%97%E7%B3%BB%E5%8F%82%E8%80%83/%E8%A7%92%E5%BA%A6%E5%8F%82%E8%80%83/%E5%B7%A6%E4%BE%A7.jpg?sign=14fcd58a565786dfe8d6305681d49c0c&t=1745375856" alt="拍摄角度2" onclick="toggleSelection(this, 'angle-container')">
@@ -67,11 +67,42 @@
         </div>
         <div class="button-container">
             <!-- 确认按钮添加 btn-11 类样式 -->
-            <button class="category-confirm-btn btn-primary px-6 py-2 font-medium text-white btn-11" onclick="confirmCategorySelection('hairdo-container')">确认</button>
+            <button class="category-confirm-btn btn-primary px-6 py-2 font-medium text-white btn-11" onclick="confirmAndHide('hairdo-image-container', this)">确认</button>
             <button class="category-reset-btn" onclick="resetCategorySelection('hairdo-container')">重选</button>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        function confirmAndHide(containerId, button) {
+            const container = document.getElementById(containerId);
+            const selectedImages = container.querySelectorAll('img.selected');
+            const allImages = container.querySelectorAll('img');
+
+            if (selectedImages.length > 0) {
+                allImages.forEach(img => {
+                    if (!img.classList.contains('selected')) {
+                        img.style.display = 'none';
+                    }
+                });
+            }
+        }
+
+        // 假设这是原有的 toggleSelection 函数，实际使用时需根据情况完善
+        function toggleSelection(img, containerId) {
+            img.classList.toggle('selected');
+        }
+
+        // 假设这是原有的 resetCategorySelection 函数，实际使用时需根据情况完善
+        function resetCategorySelection(containerId) {
+            const container = document.getElementById(containerId.replace('-container', '-image-container'));
+            if (container) {
+                const allImages = container.querySelectorAll('img');
+                allImages.forEach(img => {
+                    img.style.display = 'block';
+                    img.classList.remove('selected');
+                });
+            }
+        }
+    </script>
 </body>
 </html>
