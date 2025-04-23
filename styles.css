@@ -15,14 +15,20 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* 确保 category 容器自适应宽度 */
+    /* 电脑端样式 */
     width: 100%;
-    max-width: 800px; /* 可根据需要调整最大宽度 */
-    /* 新增以下样式让子元素居中 */
+    max-width: 1500px; 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+/* 手机端样式，假设手机屏幕最大宽度为 768px，可根据实际情况调整 */ 
+@media (max-width: 768px) { 
+    .category { 
+        max-width: 95%; 
+    } 
+} 
 
 .category h2 {
     color: #555;
